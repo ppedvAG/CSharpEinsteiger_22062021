@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.PersonenManager.Model", "ppedv.PersonenManager.Model\ppedv.PersonenManager.Model.csproj", "{7006DB91-88E9-4D34-B3A2-76D397B3F649}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.PersonenManager.UI_Console", "ppedv.PersonenManager.UI_Console\ppedv.PersonenManager.UI_Console.csproj", "{B26C7F2B-66BA-446C-895C-51B03F261164}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7006DB91-88E9-4D34-B3A2-76D397B3F649}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7006DB91-88E9-4D34-B3A2-76D397B3F649}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7006DB91-88E9-4D34-B3A2-76D397B3F649}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7006DB91-88E9-4D34-B3A2-76D397B3F649}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B26C7F2B-66BA-446C-895C-51B03F261164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B26C7F2B-66BA-446C-895C-51B03F261164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B26C7F2B-66BA-446C-895C-51B03F261164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B26C7F2B-66BA-446C-895C-51B03F261164}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8526FAE1-0B3F-40D5-B7B1-1E0CD32FC85E}
+	EndGlobalSection
+EndGlobal

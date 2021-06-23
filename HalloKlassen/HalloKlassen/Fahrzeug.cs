@@ -2,6 +2,26 @@
 
 namespace HalloKlassen
 {
+    class Auto : Fahrzeug
+    {
+        public int AnzahlReifen { get; set; }
+    }
+
+    class Fahrrad : Fahrzeug
+    {
+        public bool Klingel { get; set; }
+    }
+
+    class Tandem : Fahrrad
+    {
+
+    }
+
+    class Schiff : Fahrzeug
+    {
+        public bool NebelHorn { get; set; }
+    }
+
     class Fahrzeug
     {
         //properties / felder
@@ -85,7 +105,7 @@ namespace HalloKlassen
 
         ~Fahrzeug() //destruktor
         {
-                
+
         }
     }
 

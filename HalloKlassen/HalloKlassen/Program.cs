@@ -8,6 +8,8 @@ namespace HalloKlassen
 
         static void Main(string[] args)
         {
+            //Console.WriteLine(new DateTime(2000, 8, 31).AddMonths(6));
+
             Console.WriteLine("Hello World!");
 
             Console.WriteLine(zahl);
@@ -43,6 +45,16 @@ namespace HalloKlassen
             ZeigeFahrzeug(meinFahrzeug);
 
             ZeigeFahrzeug(anderesFahrzeug);
+
+            Auto auto = new Auto();
+            auto.AnzahlReifen = 4;
+            auto.Farbe = "blau";
+            ZeigeFahrzeug(auto);
+            ZeigeAuto(auto);
+            //ZeigeAuto(meinFahrzeug);
+
+            Schiff schiff = new Schiff() { NebelHorn = true };
+
         }
 
         static void Verdoppeln(int einezahl)
@@ -52,11 +64,14 @@ namespace HalloKlassen
         }
 
 
-        static void ZeigeFahrzeug(HalloKlassen.Fahrzeug einFahrzeug)
+        static void ZeigeFahrzeug(Fahrzeug einFahrzeug)
         {
-            einFahrzeug.Modell += "LALALAA";
-            Console.WriteLine($"{einFahrzeug.GetHersteller() } {einFahrzeug.Modell} {einFahrzeug.Farbe} {einFahrzeug.PS}");
+            Console.WriteLine($"FAHRZEUG: {einFahrzeug.GetHersteller() } {einFahrzeug.Modell} {einFahrzeug.Farbe} {einFahrzeug.PS}");
+        }
 
+        static void ZeigeAuto(Auto einAuto)
+        {
+            Console.WriteLine($"AUTO: {einAuto.GetHersteller() } {einAuto.Modell} {einAuto.Farbe} {einAuto.AnzahlReifen}");
         }
     }
 
