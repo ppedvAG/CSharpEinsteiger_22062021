@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.PersonenManager.Model", "ppedv.PersonenManager.Model\ppedv.PersonenManager.Model.csproj", "{7006DB91-88E9-4D34-B3A2-76D397B3F649}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ppedv.PersonenManager.Model", "ppedv.PersonenManager.Model\ppedv.PersonenManager.Model.csproj", "{7006DB91-88E9-4D34-B3A2-76D397B3F649}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.PersonenManager.UI_Console", "ppedv.PersonenManager.UI_Console\ppedv.PersonenManager.UI_Console.csproj", "{B26C7F2B-66BA-446C-895C-51B03F261164}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ppedv.PersonenManager.UI_Console", "ppedv.PersonenManager.UI_Console\ppedv.PersonenManager.UI_Console.csproj", "{B26C7F2B-66BA-446C-895C-51B03F261164}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ppedv.PersonenManager.UI_WinForms", "ppedv.PersonenManager.UI_WinForms\ppedv.PersonenManager.UI_WinForms.csproj", "{63C01FC7-C1AF-44A7-8E57-B9241C50245F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.PersonenManager.Data.XML", "ppedv.PersonenManager.Data.XML\ppedv.PersonenManager.Data.XML.csproj", "{272EDBFB-2BBC-4F05-9668-ED28B165A49F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.PersonenManager.Data.JSON", "ppedv.PersonenManager.Data.JSON\ppedv.PersonenManager.Data.JSON.csproj", "{54F9FD3E-0A4F-4326-B85B-9C7C7D24DD55}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{B26C7F2B-66BA-446C-895C-51B03F261164}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B26C7F2B-66BA-446C-895C-51B03F261164}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B26C7F2B-66BA-446C-895C-51B03F261164}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63C01FC7-C1AF-44A7-8E57-B9241C50245F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63C01FC7-C1AF-44A7-8E57-B9241C50245F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63C01FC7-C1AF-44A7-8E57-B9241C50245F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63C01FC7-C1AF-44A7-8E57-B9241C50245F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{272EDBFB-2BBC-4F05-9668-ED28B165A49F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{272EDBFB-2BBC-4F05-9668-ED28B165A49F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{272EDBFB-2BBC-4F05-9668-ED28B165A49F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{272EDBFB-2BBC-4F05-9668-ED28B165A49F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54F9FD3E-0A4F-4326-B85B-9C7C7D24DD55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54F9FD3E-0A4F-4326-B85B-9C7C7D24DD55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54F9FD3E-0A4F-4326-B85B-9C7C7D24DD55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54F9FD3E-0A4F-4326-B85B-9C7C7D24DD55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

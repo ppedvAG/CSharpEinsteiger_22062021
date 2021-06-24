@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ppedv.PersonenManager.Data.JSON\ppedv.PersonenManager.Data.JSON.csproj" />
+    <ProjectReference Include="..\ppedv.PersonenManager.Data.XML\ppedv.PersonenManager.Data.XML.csproj" />
+    <ProjectReference Include="..\ppedv.PersonenManager.Model\ppedv.PersonenManager.Model.csproj" />
+  </ItemGroup>
+
+</Project>
