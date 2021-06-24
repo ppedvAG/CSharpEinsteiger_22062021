@@ -1,18 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ppedv.PersonenManager.Model
+﻿namespace ppedv.PersonenManager.Model
 {
-   public class Feuerwehrmann : Person
+    public class Feuerwehrmann : Person, IMenschenretter
     {
         public override int Zahl => 19;
 
         public override string GetAnrede()
         {
-            return "Held ";
+            return "Held";
+        }
+
+        public int GetAnzahlGeretteteMenschen()
+        {
+            return 12;
         }
     }
 }

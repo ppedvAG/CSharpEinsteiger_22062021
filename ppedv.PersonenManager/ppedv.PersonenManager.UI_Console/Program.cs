@@ -12,21 +12,29 @@ namespace ppedv.PersonenManager.UI_Console
             //Person person = new Person() { Vorname = "Fred", Nachname = "Feuerstein" };
             Arzt doc = new Arzt() { Vorname = "Dr. ", Nachname = "Arcula", Fachrichtung = "Blut" };
             Mitarbeiter mitarbeiter = new Mitarbeiter() { Vorname = "Boris", Nachname = "Becker", Beruf = "Tennis" };
-            Feuerwehrmann fm = new Feuerwehrmann() { Vorname = "Fred", Nachname = "Durst"  };
+            Feuerwehrmann fm = new Feuerwehrmann() { Vorname = "Fred", Nachname = "Durst" };
 
             //ZeigePerson(person);
             ZeigePerson(doc);
+            ZeigeHeld(doc);
             ZeigePerson(mitarbeiter);
+            //ZeigeHeld(mitarbeiter);
             ZeigePerson(fm);
+            ZeigeHeld(fm);
 
             Console.ReadLine();
+        }
+
+        static void ZeigeHeld(IMenschenretter retter)
+        {
+            Console.WriteLine("Gerettete Menschen: " + retter.GetAnzahlGeretteteMenschen());
         }
 
         static void ZeigePerson(Person person)
         {
             Console.WriteLine($"{person.GetAnrede()}  {person.Vorname} {person.Nachname} [{person.Zahl}]");
             Console.WriteLine($"Was ist es: {person.SagMirWasDuBist()}");
-            if(person is Mitarbeiter m)
+            if (person is Mitarbeiter m)
                 Console.WriteLine($"Was ist es: {m.SagMirWasDuBist()}");
 
 
@@ -45,7 +53,7 @@ namespace ppedv.PersonenManager.UI_Console
             }
 
             //Variante 3: Pattern-Matching (2015--)
-            if(person is Arzt personAlsArzt3)
+            if (person is Arzt personAlsArzt3)
             {
                 Console.WriteLine($"\tDas ist ein Arzt mit der Fachrichtung {personAlsArzt3.Fachrichtung}");
             }
