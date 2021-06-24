@@ -9,18 +9,26 @@ namespace ppedv.PersonenManager.UI_Console
         {
             Console.WriteLine("Hello World!");
 
-            Person person = new Person() { Vorname = "Fred", Nachname = "Feuerstein" };
+            //Person person = new Person() { Vorname = "Fred", Nachname = "Feuerstein" };
             Arzt doc = new Arzt() { Vorname = "Dr. ", Nachname = "Arcula", Fachrichtung = "Blut" };
             Mitarbeiter mitarbeiter = new Mitarbeiter() { Vorname = "Boris", Nachname = "Becker", Beruf = "Tennis" };
+            Feuerwehrmann fm = new Feuerwehrmann() { Vorname = "Fred", Nachname = "Durst"  };
 
-            ZeigePerson(person);
+            //ZeigePerson(person);
             ZeigePerson(doc);
             ZeigePerson(mitarbeiter);
+            ZeigePerson(fm);
+
+            Console.ReadLine();
         }
 
         static void ZeigePerson(Person person)
         {
-            Console.WriteLine($"{person.Vorname} {person.Nachname}");
+            Console.WriteLine($"{person.GetAnrede()}  {person.Vorname} {person.Nachname} [{person.Zahl}]");
+            Console.WriteLine($"Was ist es: {person.SagMirWasDuBist()}");
+            if(person is Mitarbeiter m)
+                Console.WriteLine($"Was ist es: {m.SagMirWasDuBist()}");
+
 
             //Variante 1: Old-School (2003-2005)
             if (person is Arzt) //typprüfung
@@ -41,7 +49,7 @@ namespace ppedv.PersonenManager.UI_Console
             {
                 Console.WriteLine($"\tDas ist ein Arzt mit der Fachrichtung {personAlsArzt3.Fachrichtung}");
             }
-
+            Console.WriteLine("-----------------------------------------------------------");
         }
     }
 }
