@@ -39,6 +39,7 @@ namespace ppedv.PersonenManager.UI_WinForms
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.flowLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
@@ -102,7 +103,7 @@ namespace ppedv.PersonenManager.UI_WinForms
             this.groupBox1.Controls.Add(this.flowLayoutPanel2);
             this.groupBox1.Location = new System.Drawing.Point(605, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(213, 80);
+            this.groupBox1.Size = new System.Drawing.Size(317, 80);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Storage";
@@ -113,10 +114,11 @@ namespace ppedv.PersonenManager.UI_WinForms
             this.flowLayoutPanel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.flowLayoutPanel2.Controls.Add(this.radioButton1);
             this.flowLayoutPanel2.Controls.Add(this.radioButton2);
+            this.flowLayoutPanel2.Controls.Add(this.radioButton3);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 35);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(207, 42);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(311, 42);
             this.flowLayoutPanel2.TabIndex = 0;
             // 
             // radioButton1
@@ -129,6 +131,7 @@ namespace ppedv.PersonenManager.UI_WinForms
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "XML";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton2
             // 
@@ -162,6 +165,18 @@ namespace ppedv.PersonenManager.UI_WinForms
             this.dataGridView1.RowTemplate.Height = 41;
             this.dataGridView1.Size = new System.Drawing.Size(1166, 497);
             this.dataGridView1.TabIndex = 2;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(210, 3);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(98, 36);
+            this.radioButton3.TabIndex = 2;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Excel";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // Form1
             // 
@@ -198,6 +213,7 @@ namespace ppedv.PersonenManager.UI_WinForms
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton3;
     }
 }
 

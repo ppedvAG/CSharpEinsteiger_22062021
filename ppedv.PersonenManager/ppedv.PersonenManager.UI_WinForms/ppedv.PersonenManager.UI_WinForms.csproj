@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ppedv.PersonenManager.Data.Excel\ppedv.PersonenManager.Data.Excel.csproj" />
     <ProjectReference Include="..\ppedv.PersonenManager.Data.JSON\ppedv.PersonenManager.Data.JSON.csproj" />
     <ProjectReference Include="..\ppedv.PersonenManager.Data.XML\ppedv.PersonenManager.Data.XML.csproj" />
     <ProjectReference Include="..\ppedv.PersonenManager.Model\ppedv.PersonenManager.Model.csproj" />

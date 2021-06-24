@@ -1,4 +1,5 @@
-﻿using ppedv.PersonenManager.Data.JSON;
+﻿using ppedv.PersonenManager.Data.Excel;
+using ppedv.PersonenManager.Data.JSON;
 using ppedv.PersonenManager.Data.XML;
 using ppedv.PersonenManager.Model;
 using System;
@@ -40,11 +41,28 @@ namespace ppedv.PersonenManager.UI_WinForms
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
+            SetDataStore();
+
+        }
+
+        private void SetDataStore()
+        {
             if (radioButton1.Checked)
                 datastore = new XmlClient();
-            else if(radioButton2.Checked)
+            else if (radioButton2.Checked)
                 datastore = new JsonClient();
+            else if (radioButton3.Checked)
+                datastore = new ExcelClient();
+        }
 
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            SetDataStore();
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            SetDataStore();
         }
     }
 }
