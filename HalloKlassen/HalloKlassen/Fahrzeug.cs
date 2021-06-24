@@ -52,7 +52,6 @@ namespace HalloKlassen
             }
         }
 
-
         public int PS { get; set; } //auto-property
 
         public double KW { get { return PS * 1.6; } }
