@@ -22,7 +22,7 @@ namespace ppedv.PersonenManager.Data.Excel
                         m.Vorname = sheet.Cell(row, 1).Value.ToString();
                         m.Nachname = sheet.Cell(row, 2).Value.ToString();
                         m.Beruf = sheet.Cell(row, 3).Value.ToString();
-
+                        
                         mList.Add(m);
                         row++;
                     }                                        
